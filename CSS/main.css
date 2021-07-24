@@ -1,4 +1,7 @@
-body {
-    font-size: 100px;
+/* COMMON */
+.body__container {
     font-family: 'Roboto', sans-serif;
+    font: 16px;
+    font-weight: 400;
+    color: #333
 }
