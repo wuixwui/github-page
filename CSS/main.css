@@ -68,3 +68,48 @@
 .input--text::-ms-input-placeholder { color: #cacaca; }
 /* firefox */
 .input--text::-moz-input-placeholder { color: #cacaca; }
+
+
+/* HEADER */
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, .75);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+    background: #fff;
+}
+header .inner {
+    max-width: 980px;
+    height: 78px;
+    margin: 0 auto;
+}
+header .menu-group {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+header .logo {
+    margin-right: 10px;
+}
+header .logo a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/logo.svg");
+    text-indent: -9999px;
+}
+header .logo a:hover {
+    background-image: url("../img/logo_on.svg");
+}
+header .main-menu {
+    display: flex;
+}
+header .main-menu li a {
+    display: block;
+    padding: 10px;
+    color: #3c4146;
+    text-decoration: none;
+    font-weight: 500;
+}
+header .main-menu li a:hover {
+    color: #4078c5;
+}
