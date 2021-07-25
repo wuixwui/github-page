@@ -32,14 +32,12 @@ a {
     height: 34px;
     padding: 0 12px;
     /*  내용의 너비 만큼만 가로 크기를 사용할 수 있음  */
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    
     font-size: 14px;
     font-weight: 500;
     line-height: 1.5;
     color: #333;
-    
     cursor: pointer;
     position: relative;
 }
@@ -186,6 +184,17 @@ header .sub-menu li a {
 }
 header.sub-menu li a:hover {
     color: #4078c0;
+}
+#toggle-btn {
+    display: none;
+    background: url("../img/toggle-btn.svg");
+        width: 18px;
+        height: 24px;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        cursor: pointer;
+        text-indent: -9999px;
 }
 
 /* VISUAL */
@@ -396,3 +405,4 @@ footer .logo {
 footer .logo:hover svg{
     fill: #4078c0
 }
+
