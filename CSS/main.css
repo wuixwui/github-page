@@ -84,9 +84,6 @@ a {
     .input--text::-moz-input-placeholder { color: #cacaca; }
 
 /* SUMMARY */
-.summary {
-
-}
 .summary__title {
     font-size: 38px;
     font-weight: 300;
@@ -320,9 +317,7 @@ header.sub-menu li a:hover {
 }
 
 /* WHERE IS */
-.section--where-is {
 
-}
 .section--where-is .inner {
     padding-top: 80px;
 }
@@ -369,9 +364,6 @@ header.sub-menu li a:hover {
 }
 
 /* FOOTER */
-footer {
-
-}
 footer .inner {
     padding: 50px 0;
     border-top: 1px solid #eee;
@@ -390,4 +382,17 @@ footer .site-links li a {
 }
 footer .site-links li a:hover {
     text-decoration: underline;
+}
+footer .logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 24px;
+    height: 24px;
+}
+footer .logo:hover svg{
+    fill: #4078c0
 }
