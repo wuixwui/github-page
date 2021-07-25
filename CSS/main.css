@@ -8,6 +8,7 @@
 a {
     text-decoration: none;
 }
+
     /* FLOAT CLEARFIX */
 .clearfix::after {
     content: "";
@@ -42,7 +43,6 @@ a {
     cursor: pointer;
     position: relative;
 }
-
 .btn:hover::before {
     content:"";
     position: absolute;
@@ -52,7 +52,6 @@ a {
     height: 100%;
     background: rgba(0,0,0,0.07);
 }
-
 .btn.btn--primary {
     border: 1px solid #65b836;
     color: #fff;
@@ -70,20 +69,19 @@ a {
     box-shadow: inset 0 1px 2px  rgba(0,0,0,0.075);
     font-size: 16px;
 }
-
 .input--text:focus {
     border-color: #51a7e8;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075),
                 0 0 5px rgba(81, 167, 232, 0.5);
 }
 
-    /* VENDER PREFIX 브라우저 업체별 접두사*/   
-/* chrome */
-.input--text::-webkit-input-placeholder { color: #cacaca; }
-/* IE edge */
-.input--text::-ms-input-placeholder { color: #cacaca; }
-/* firefox */
-.input--text::-moz-input-placeholder { color: #cacaca; }
+/* VENDER PREFIX 브라우저 업체별 접두사*/   
+    /* chrome */
+    .input--text::-webkit-input-placeholder { color: #cacaca; }
+    /* IE edge */
+    .input--text::-ms-input-placeholder { color: #cacaca; }
+    /* firefox */
+    .input--text::-moz-input-placeholder { color: #cacaca; }
 
 /* SUMMARY */
 .summary {
@@ -95,7 +93,7 @@ a {
     line-height: 1.25;
     margin-bottom: 18px;
 }
-.summary__discription {
+.summary__description {
     font-size: 26px;
     font-weight: 300;
     color: #767676;
@@ -198,20 +196,26 @@ header.sub-menu li a:hover {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
     background-position: bottom left;
-    
+    background-size: cover;
 }
+.section--visual::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:rgba(0, 0, 0, .3);
+}    
 .section--visual .inner {
         padding: 160px 0;
 }
-
 .section--visual .summary__title {
     color: #fff;
     font-size: 54px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .25),
                 0 1px 25px rgba(0, 0, 0, .75);
-
 }
-
 .section--visual .summary__description {
     color: #fff;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .25),
